@@ -1,0 +1,36 @@
+
+<h1>טופס הזמנת ביקור טכנאי</h1>
+<form [formGroup]="userForm">
+    <li>
+        <label for="date">תאריך:</label>
+        <input type="date" id="date" formControlName="date">
+    </li>
+    <li>
+        <label for="username">שם המזמין:</label>
+        <input type="text" id="username" formControlName="username">
+    </li>
+    <li>
+        <label for="address">כתובת:</label>
+        <input type="text" id="address" formControlName="address">
+    </li>
+    <li>
+        <label for="phone">טלפון:</label>
+        <input type="text" id="phone" formControlName="phone">
+    </li>
+    <li>
+        <label for="reason">סיבת הזימון:</label>
+        <select id="reason" formControlName="reason">
+            <option value="">בחר סיבה</option>
+            <option value="new">התקנת מוצר חדש</option>
+            <option value="warranty">תקלה בתקופת האחריות</option>
+            <option value="no-warranty">תקלה לא בתקופת האחריות</option>
+        </select>
+    </li>
+    <li> 
+        <label for="accountNumber">מספר חשבונית:</label>
+        <input type="text" id="accountNumber" formControlName="accountNumber">
+    </li>
+    <li><label for="description"> תאור התקלה:</label>
+    <input type="text" id="description" formControlName="description"></li>
+    <button (click)="onSubmit()">שלח</button>
+</form>
