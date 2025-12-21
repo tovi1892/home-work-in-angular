@@ -36,7 +36,7 @@ export class TaxDiscountServiceService {
                     message = `Sorry, ${daysPassed} days have passed since the last submission of requests`;
             }
         }
-        // this.lastDate = data;
+    
         return message;
     }
 }
