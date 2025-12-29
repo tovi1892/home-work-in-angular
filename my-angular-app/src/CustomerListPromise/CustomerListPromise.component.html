@@ -1,0 +1,12 @@
+<button (click)="getTimeoutPromise()">קבלת רשימה שימוש עם promise timeout</button>
+<br><br>
+<table border="1">
+    <tr>
+        <td>שם</td>
+        <td>id</td>
+    </tr>
+    <tr *ngFor="let s of list">
+        <td>{{s.name}}</td>
+        <td>{{s.id}}</td>
+    </tr>
+</table>
