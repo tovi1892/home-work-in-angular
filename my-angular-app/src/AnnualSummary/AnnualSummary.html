@@ -1,0 +1,21 @@
+<!-- <button (click)="getList()">קבלת רשימה פונקציה בסיסית</button><br><br>
+<button (click)="getPromise()">קבלת רשימה שימוש עם promise</button><br><br>
+<button (click)="getTimeoutPromise()">קבלת רשימה שימוש עם promise timeout</button> -->
+<br><br>
+<table border="1">
+    <tr>
+        <td>Revenue</td>
+        <td>Expenses</td>
+        <td>Advertisements</td>
+        <td>Sales</td>
+        <td>Customers</td>
+       
+    </tr>
+    <tr *ngFor="let item of listSummary">
+        <td>{{item.Revenue}}</td>
+        <td>{{item.Expenses}}</td>
+        <td>{{item.Advertisements}}</td>
+        <td>{{item.Sales}}</td>
+        <td>{{item.Customers}}</td>
+    </tr>
+</table>

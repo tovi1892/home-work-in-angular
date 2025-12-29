@@ -1,0 +1,13 @@
+<!-- <button (click)="getPromise()">קבלת רשימה שימוש עם promise</button><br><br> -->
+<br><br>
+<table border="1">
+    <tr>
+        <td>שם</td>
+        <td>id</td>
+    </tr>
+    
+    <tr *ngFor="let s of listCustomer">
+        <td>{{s.name}}</td>
+        <td>{{s.id}}</td>
+    </tr>
+</table>

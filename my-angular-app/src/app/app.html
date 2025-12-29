@@ -1,7 +1,9 @@
 
 
-
-<app-tax-discount>
-
-</app-tax-discount>
- 
+<div *ngIf="userType$ | async as userType; else loading">
+  <app-AnnualSummary *ngIf="userType === 'מזכיר'"></app-AnnualSummary>
+  <app-promise *ngIf="userType === 'מנהל'"></app-promise>
+</div>
+<ng-template #loading>
+  <div>טוען...</div>
+</ng-template>
